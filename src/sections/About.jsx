@@ -51,31 +51,7 @@ export default function About() {
               {personal.about}
             </p>
 
-            {/* Quick info */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="glass-card p-4">
-                <p className="text-text-muted text-xs mb-1">Email</p>
-                <a
-                  href={`mailto:${personal.email}`}
-                  className="text-primary-bright text-sm hover:underline break-all"
-                >
-                  {personal.email}
-                </a>
-              </div>
-              <div className="glass-card p-4">
-                <p className="text-text-muted text-xs mb-1">Phone</p>
-                <a
-                  href={`tel:${personal.phone}`}
-                  className="text-text-main text-sm hover:text-primary-bright transition-colors"
-                >
-                  {personal.phone}
-                </a>
-              </div>
-              <div className="glass-card p-4 sm:col-span-2">
-                <p className="text-text-muted text-xs mb-1">Location</p>
-                <p className="text-text-main text-sm">{personal.location}</p>
-              </div>
-            </div>
+
           </motion.div>
 
           {/* Highlights side */}
